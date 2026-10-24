@@ -1,0 +1,42 @@
+    1  sudo visudo
+    2  sudo fdisk /dev/sdX
+    3  sudo fdisk/dev/sdX
+    4  history
+    5  sudo fdisk /dev/sdb
+    6  lsblk
+    7  fdisk /dev/sdc
+    8  lsblk
+    9  fdisk dev/sdd
+   10  sudo fdisk /dev/sdd
+   11  lsblk
+   12  pvcreate dev/sdb1
+   13  sudo pvcreate dev/sdb1
+   14  pvcreate /dev/sbd1
+   15  pvcreate /dev/sdb1
+   16  pvcreate /dev/sdc1
+   17  pvcreate /dev/sdd1
+   18  vgcreate datos /dev/sdb1
+   19  vgcreate datos /dev/sdc1 /dev/sdd1
+   20  lsblk
+   21  vgs
+   22  vgcreate datos /dev/sdc1
+   23  vgextend datos /dev/sdc1
+   24  lsblk
+   25  vgs
+   26  vgextend datos /dev/sdd1
+   27  lsblk
+   28  vgs
+   29  lvcreate -1G -n www datos 
+   30  lvcreate -L 1G -n www datos
+   31  lvcreate -L 4G -n salvas datos
+   32  lvs
+   33  mkdir /lvextend -L +1G /dev/datos/www
+   34  lvextend -L +1 /dev/datos/www
+   35  lvs
+   36  lvextend -L +2G /dev/datos/www
+   37  lvs
+   38  history
+   39  lvreduce -L -1G /dev/datos/www
+   40  lvs
+   41  history
+   42  history > history.txt
